@@ -22,6 +22,16 @@ const routes = [
     path: '/provider-home',
     name: 'ProviderHome',
     component: () => import(/* webpackChunkName: "about" */ '../views/ProviderHome.vue')
+  },
+  {
+    path: '/provider-cart',
+    name: 'ProviderCart',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ProviderCart.vue')
+  },
+  {
+    path: '/provider-state',
+    name: 'ProviderState',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ProviderState.vue')
   }
 ]
 

@@ -18,21 +18,24 @@
       <span class="mr-2 font-weight-bold text-h6">Home</span>
     </v-btn>
     
+    <v-btn text to="/provider-cart">
     <v-badge
-        :content="messages"
-        :value="messages"
+        :content="count"
+        :value="count"
         color="teal"
         overlap
       >
         <v-icon large>mdi-cart</v-icon>
       </v-badge>
+    </v-btn>
     
   </v-app-bar>
 </template>
 
 <script>
 export default {
-  nmae: "Navbar",
+  props:['count'],
+  name: "Navbar",
   data() {
       return {
           messages: 5,
