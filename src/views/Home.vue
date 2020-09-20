@@ -21,7 +21,6 @@
       <v-btn
         class
         to="/provider-home"
-        target="_blank"
         color="green lighter-2"
       >
         <span class="mr-2 font-weight-bold text-h6">Provider</span>
@@ -58,7 +57,7 @@
         <v-btn color="green lighten-2 white--text">Reduce</v-btn>
       </v-card-actions>
           </v-card>-->
-          <v-data-table :headers="headers" :items="desserts" class="elevation-1">
+          <v-data-table :headers="headers" :items="desserts" class="elevation-1" :items-per-page="5">
             <template v-slot:item.image="{ item }">
               <v-avatar>
                 <img :src="require(`../assets/ingredients/${item.image}`)" :alt="item.name" />
@@ -120,6 +119,26 @@ export default {
           name: "Chocolate",
           image: '5.jpg',
           quantity: 43,
+        },
+        {
+          name: "Butter",
+          image: '6.jpg',
+          quantity: 10,
+        },
+        {
+          name: "Yeast",
+          image: '7.jpg',
+          quantity: 17,
+        },
+        {
+          name: "Egg",
+          image: '8.png',
+          quantity: 37,
+        },
+        {
+          name: "Vanilla",
+          image: '9.jpeg',
+          quantity: 47,
         },
       ],
     };

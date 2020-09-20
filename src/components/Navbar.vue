@@ -14,7 +14,7 @@
 
     <v-spacer></v-spacer>
 
-    <v-btn href="https://github.com/vuetifyjs/vuetify/releases/latest" target="_blank" text>
+    <v-btn to="/provider-home"  text>
       <span class="mr-2 font-weight-bold text-h6">Home</span>
     </v-btn>
     
